@@ -1,0 +1,385 @@
+INSERT INTO Devices (
+    type, 
+    name, 
+    brand, 
+    price, 
+    release_date, 
+    about, 
+    provider, 
+    specs
+) VALUES (
+    'Mobile Phone',
+    'iPhone 15 Pro',
+    'Apple',
+    175000.00,
+    '2023-09-01',
+    'Flagship smartphone with titanium design, A17 Pro chip, and advanced camera system. Features a 6.1-inch Super Retina XDR display and all-day battery life.',
+    'iPhone',
+    JSON_OBJECT(
+        'design_display', JSON_OBJECT(
+            'dimensions', '146.7 x 71.5 x 8.3 mm',
+            'weight', '187 g',
+            'build', 'Glass front (Ceramic Shield), glass back, titanium frame',
+            'display_type', 'LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision',
+            'screen_size', '6.1 inches, 91.7 cm²',
+            'resolution', '1179 x 2556 pixels, 19.5:9 ratio',
+            'protection', 'Ceramic Shield glass'
+        ),
+        'performance', JSON_OBJECT(
+            'os', 'iOS 17',
+            'chipset', 'Apple A17 Pro (3 nm)',
+            'cpu', 'Hexa-core (2x3.78 GHz + 4x2.11 GHz)',
+            'gpu', 'Apple GPU (6-core graphics)',
+            'ram', '8GB',
+            'storage', '128GB / 256GB / 512GB / 1TB'
+        ),
+        'camera', JSON_OBJECT(
+            'main_camera', 'Triple: 48 MP, f/1.8, 24mm (wide); 12 MP, f/2.8, 77mm (telephoto), 3x optical zoom; 12 MP, f/2.2, 13mm, 120˚ (ultrawide)',
+            'features', 'Dual-LED dual-tone flash, HDR (photo/panorama)',
+            'video', '4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, HDR, Dolby Vision HDR, ProRes, Cinematic mode',
+            'selfie_camera', '12 MP, f/1.9, 23mm (wide)'
+        ),
+        'battery', JSON_OBJECT(
+            'battery_type', 'Li-Ion 3274 mAh, non-removable',
+            'charging', '27W wired (50% in 30 min), 15W MagSafe wireless, 7.5W Qi wireless'
+        ),
+        'connectivity', JSON_OBJECT(
+            'wlan', 'Wi-Fi 802.11 a/b/g/n/ac/6e, dual-band',
+            'bluetooth', '5.3, A2DP, LE',
+            'gps', 'Yes, with A-GPS, GLONASS, GALILEO, BDS, QZSS',
+            'nfc', 'Yes',
+            'port', 'USB Type-C 3.0'
+        )
+    )
+);
+
+INSERT INTO Devices (
+    type, 
+    name, 
+    brand, 
+    price, 
+    release_date, 
+    about, 
+    provider, 
+    specs
+) VALUES (
+    'Mobile Phone',
+    'Galaxy S24 Ultra',
+    'Samsung',
+    180000.00,
+    '2024-01-17',
+    'Premium smartphone with S Pen, Snapdragon 8 Gen 3, and enhanced AI features. Boasts a 6.8-inch Dynamic AMOLED 2X display and robust battery life.',
+    'Galaxy',
+    JSON_OBJECT(
+        'design_display', JSON_OBJECT(
+            'dimensions', '162.3 x 79.0 x 8.6 mm',
+            'weight', '232 g',
+            'build', 'Glass front (Gorilla Glass Armor), glass back, titanium frame',
+            'display_type', 'Dynamic AMOLED 2X, 120Hz, HDR10+',
+            'screen_size', '6.8 inches, 113.5 cm²',
+            'resolution', '1440 x 3120 pixels, 19.5:9 ratio',
+            'protection', 'Corning Gorilla Glass Armor'
+        ),
+        'performance', JSON_OBJECT(
+            'os', 'Android 14, One UI 6.1',
+            'chipset', 'Qualcomm Snapdragon 8 Gen 3 (4 nm)',
+            'cpu', 'Octa-core (1x3.3 GHz Cortex-X4 + 5x3.2 GHz Cortex-A720 + 2x2.3 GHz Cortex-A520)',
+            'gpu', 'Adreno 750',
+            'ram', '12GB',
+            'storage', '256GB / 512GB / 1TB'
+        ),
+        'camera', JSON_OBJECT(
+            'main_camera', 'Quad: 200 MP, f/1.7, 23mm (wide); 10 MP, f/2.4, 70mm (telephoto), 3x optical zoom; 50 MP, f/3.4, 111mm (telephoto), 5x optical zoom; 12 MP, f/2.2, 13mm, 120˚ (ultrawide)',
+            'features', 'LED flash, auto-HDR, panorama',
+            'video', '8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/240fps, HDR10+',
+            'selfie_camera', '12 MP, f/2.2, 26mm (wide)'
+        ),
+        'battery', JSON_OBJECT(
+            'battery_type', 'Li-Ion 5000 mAh, non-removable',
+            'charging', '45W wired (65% in 30 min), 15W wireless, 4.5W reverse wireless'
+        ),
+        'connectivity', JSON_OBJECT(
+            'wlan', 'Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band',
+            'bluetooth', '5.3, A2DP, LE',
+            'gps', 'Yes, with GPS, GLONASS, BDS, GALILEO',
+            'nfc', 'Yes',
+            'port', 'USB Type-C 3.2 Gen 1'
+        )
+    )
+);
+
+INSERT INTO Devices (
+    type, 
+    name, 
+    brand, 
+    price, 
+    release_date, 
+    about, 
+    provider, 
+    specs
+) VALUES (
+    'Mobile Phone',
+    'Pixel 9 Pro',
+    'Google',
+    165000.00,
+    '2024-08-13',
+    'Advanced smartphone with Google Tensor G4 chip, AI-driven features, and exceptional camera system. Features a 6.3-inch AMOLED display and seamless software experience.',
+    'Pixel',
+    JSON_OBJECT(
+        'design_display', JSON_OBJECT(
+            'dimensions', '152.8 x 71.6 x 8.5 mm',
+            'weight', '199 g',
+            'build', 'Glass front (Gorilla Glass Victus 2), glass back, aluminum frame',
+            'display_type', 'LTPO AMOLED, 120Hz, HDR10+',
+            'screen_size', '6.3 inches, 95.7 cm²',
+            'resolution', '1280 x 2856 pixels, 20:9 ratio',
+            'protection', 'Corning Gorilla Glass Victus 2'
+        ),
+        'performance', JSON_OBJECT(
+            'os', 'Android 15',
+            'chipset', 'Google Tensor G4 (4 nm)',
+            'cpu', 'Octa-core (1x3.1 GHz Cortex-X4 + 3x2.6 GHz Cortex-A720 + 4x1.9 GHz Cortex-A520)',
+            'gpu', 'Mali-G715',
+            'ram', '12GB',
+            'storage', '128GB / 256GB / 512GB'
+        ),
+        'camera', JSON_OBJECT(
+            'main_camera', 'Triple: 50 MP, f/1.9, 25mm (wide); 48 MP, f/2.8, 70mm (telephoto), 5x optical zoom; 48 MP, f/1.7, 12mm, 120˚ (ultrawide)',
+            'features', 'Dual-LED flash, Pixel Shift, Auto-HDR',
+            'video', '4K@30/60fps, 1080p@30/60/120/240fps, HDR',
+            'selfie_camera', '42 MP, f/2.2, 17mm (wide)'
+        ),
+        'battery', JSON_OBJECT(
+            'battery_type', 'Li-Ion 4700 mAh, non-removable',
+            'charging', '45W wired, 15W wireless, 5W reverse wireless'
+        ),
+        'connectivity', JSON_OBJECT(
+            'wlan', 'Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band',
+            'bluetooth', '5.3, A2DP, LE, aptX HD',
+            'gps', 'Yes, with A-GPS, GLONASS, GALILEO, QZSS',
+            'nfc', 'Yes',
+            'port', 'USB Type-C 3.2 Gen 2'
+        )
+    )
+);
+
+INSERT INTO Devices (
+    type, 
+    name, 
+    brand, 
+    price, 
+    release_date, 
+    about, 
+    provider, 
+    specs
+) VALUES (
+    'Mobile Phone',
+    'OnePlus 13',
+    'OnePlus',
+    150000.00,
+    '2025-01-07',
+    'High-performance smartphone with Snapdragon 8 Elite, Hasselblad-tuned cameras, and a 6.8-inch AMOLED display. Known for fast charging and smooth OxygenOS.',
+    'OnePlus',
+    JSON_OBJECT(
+        'design_display', JSON_OBJECT(
+            'dimensions', '162.9 x 76.5 x 8.5 mm',
+            'weight', '210 g',
+            'build', 'Glass front (Gorilla Glass), glass back, aluminum frame',
+            'display_type', 'LTPO AMOLED, 120Hz, HDR10+, Dolby Vision',
+            'screen_size', '6.8 inches, 110.2 cm²',
+            'resolution', '1440 x 3168 pixels, 20:9 ratio',
+            'protection', 'Corning Gorilla Glass 7'
+        ),
+        'performance', JSON_OBJECT(
+            'os', 'Android 15, OxygenOS 15',
+            'chipset', 'Qualcomm Snapdragon 8 Elite (3 nm)',
+            'cpu', 'Octa-core (2x4.3 GHz Cortex-X4 + 6x3.2 GHz Cortex-A720)',
+            'gpu', 'Adreno 830',
+            'ram', '12GB / 16GB',
+            'storage', '256GB / 512GB / 1TB'
+        ),
+        'camera', JSON_OBJECT(
+            'main_camera', 'Triple: 50 MP, f/1.8, 23mm (wide); 50 MP, f/2.0, 70mm (telephoto), 3x optical zoom; 50 MP, f/2.2, 14mm, 120˚ (ultrawide)',
+            'features', 'Hasselblad Color Calibration, LED flash, HDR',
+            'video', '8K@30fps, 4K@30/60/120fps, 1080p@30/60/240fps',
+            'selfie_camera', '32 MP, f/2.4, 21mm (wide)'
+        ),
+        'battery', JSON_OBJECT(
+            'battery_type', 'Li-Po 6000 mAh, non-removable',
+            'charging', '100W wired (100% in 26 min), 50W wireless'
+        ),
+        'connectivity', JSON_OBJECT(
+            'wlan', 'Wi-Fi 802.11 a/b/g/n/ac/6e/7, dual-band',
+            'bluetooth', '5.4, A2DP, LE',
+            'gps', 'Yes, with A-GPS, GLONASS, BDS, GALILEO',
+            'nfc', 'Yes',
+            'port', 'USB Type-C 3.1'
+        )
+    )
+);
+
+INSERT INTO Devices (
+    type, 
+    name, 
+    brand, 
+    price, 
+    release_date, 
+    about, 
+    provider, 
+    specs
+) VALUES (
+    'Mobile Phone',
+    'Xiaomi 15 Pro',
+    'Xiaomi',
+    140000.00,
+    '2024-10-29',
+    'Flagship device with Leica optics, Snapdragon 8 Elite, and a 6.73-inch AMOLED display. Offers top-tier performance and fast charging capabilities.',
+    'Xiaomi',
+    JSON_OBJECT(
+        'design_display', JSON_OBJECT(
+            'dimensions', '161.3 x 75.2 x 8.4 mm',
+            'weight', '213 g',
+            'build', 'Glass front, glass back, aluminum frame',
+            'display_type', 'LTPO AMOLED, 120Hz, HDR10+, Dolby Vision',
+            'screen_size', '6.73 inches, 108.9 cm²',
+            'resolution', '1440 x 3200 pixels, 20:9 ratio',
+            'protection', 'Dragontrail Glass'
+        ),
+        'performance', JSON_OBJECT(
+            'os', 'Android 15, HyperOS 2.0',
+            'chipset', 'Qualcomm Snapdragon 8 Elite (3 nm)',
+            'cpu', 'Octa-core (2x4.3 GHz Cortex-X4 + 6x3.2 GHz Cortex-A720)',
+            'gpu', 'Adreno 830',
+            'ram', '12GB / 16GB',
+            'storage', '256GB / 512GB / 1TB'
+        ),
+        'camera', JSON_OBJECT(
+            'main_camera', 'Triple: 50 MP, f/1.4, 23mm (wide); 50 MP, f/2.0, 75mm (telephoto), 3.2x optical zoom; 50 MP, f/2.2, 14mm, 115˚ (ultrawide)',
+            'features', 'Leica lens, Dual-LED flash, HDR, panorama',
+            'video', '8K@24/30fps, 4K@30/60/120fps, 1080p@30/60/240fps',
+            'selfie_camera', '32 MP, f/2.0, 22mm (wide)'
+        ),
+        'battery', JSON_OBJECT(
+            'battery_type', 'Li-Po 5400 mAh, non-removable',
+            'charging', '120W wired (100% in 18 min), 50W wireless, 10W reverse wireless'
+        ),
+        'connectivity', JSON_OBJECT(
+            'wlan', 'Wi-Fi 802.11 a/b/g/n/ac/6e/7, dual-band',
+            'bluetooth', '5.4, A2DP, LE',
+            'gps', 'Yes, with A-GPS, GLONASS, BDS, GALILEO, QZSS',
+            'nfc', 'Yes',
+            'port', 'USB Type-C 3.2 Gen 1'
+        )
+    )
+);
+
+
+INSERT INTO Devices (
+    type, 
+    name, 
+    brand, 
+    price, 
+    release_date, 
+    about, 
+    provider, 
+    specs
+) VALUES (
+    'Mobile Phone',
+    'Xperia 1 VI',
+    'Sony',
+    170000.00,
+    '2024-06-17',
+    'Multimedia-focused smartphone with 4K OLED display, professional-grade cameras, and Snapdragon 8 Gen 3. Ideal for creators and audiophiles.',
+    'Xperia',
+    JSON_OBJECT(
+        'design_display', JSON_OBJECT(
+            'dimensions', '162.0 x 74.0 x 8.2 mm',
+            'weight', '192 g',
+            'build', 'Glass front (Gorilla Glass Victus), glass back, aluminum frame',
+            'display_type', 'LTPO OLED, 120Hz, HDR10',
+            'screen_size', '6.5 inches, 103.7 cm²',
+            'resolution', '1644 x 3840 pixels, 21:9 ratio',
+            'protection', 'Corning Gorilla Glass Victus'
+        ),
+        'performance', JSON_OBJECT(
+            'os', 'Android 14',
+            'chipset', 'Qualcomm Snapdragon 8 Gen 3 (4 nm)',
+            'cpu', 'Octa-core (1x3.3 GHz Cortex-X4 + 5x3.2 GHz Cortex-A720 + 2x2.3 GHz Cortex-A520)',
+            'gpu', 'Adreno 750',
+            'ram', '12GB',
+            'storage', '256GB / 512GB'
+        ),
+        'camera', JSON_OBJECT(
+            'main_camera', 'Triple: 48 MP, f/1.9, 24mm (wide); 12 MP, f/2.8, 85mm (telephoto), 3.5x-7.1x continuous zoom; 12 MP, f/2.2, 16mm, 123˚ (ultrawide)',
+            'features', 'Zeiss optics, LED flash, HDR, eye tracking',
+            'video', '4K@24/25/30/60/120fps, 1080p@30/60/120fps, HDR',
+            'selfie_camera', '12 MP, f/2.0, 24mm (wide)'
+        ),
+        'battery', JSON_OBJECT(
+            'battery_type', 'Li-Po 5000 mAh, non-removable',
+            'charging', '30W wired, 15W wireless, 5W reverse wireless'
+        ),
+        'connectivity', JSON_OBJECT(
+            'wlan', 'Wi-Fi 802.11 a/b/g/n/ac/6e, dual-band',
+            'bluetooth', '5.3, A2DP, LE Audio',
+            'gps', 'Yes, with A-GPS, GLONASS, BDS, GALILEO, QZSS',
+            'nfc', 'Yes',
+            'port', 'USB Type-C 3.2 Gen 1'
+        )
+    )
+);
+
+INSERT INTO Devices (
+    type, 
+    name, 
+    brand, 
+    price, 
+    release_date, 
+    about, 
+    provider, 
+    specs
+) VALUES (
+    'Mobile Phone',
+    'Find X8 Pro',
+    'Oppo',
+    155000.00,
+    '2024-11-21',
+    'Premium smartphone with MediaTek Dimensity 9400, Hasselblad cameras, and a 6.78-inch AMOLED display. Offers stunning design and fast charging.',
+    'Find X',
+    JSON_OBJECT(
+        'design_display', JSON_OBJECT(
+            'dimensions', '162.7 x 76.1 x 8.2 mm',
+            'weight', '215 g',
+            'build', 'Glass front (Gorilla Glass), glass back, aluminum frame',
+            'display_type', 'AMOLED, 120Hz, HDR10+, Dolby Vision',
+            'screen_size', '6.78 inches, 111.5 cm²',
+            'resolution', '1440 x 3168 pixels, 20:9 ratio',
+            'protection', 'Corning Gorilla Glass 7'
+        ),
+        'performance', JSON_OBJECT(
+            'os', 'Android 15, ColorOS 15',
+            'chipset', 'MediaTek Dimensity 9400 (3 nm)',
+            'cpu', 'Octa-core (1x3.6 GHz Cortex-X4 + 3x2.8 GHz Cortex-A720 + 4x2.0 GHz Cortex-A520)',
+            'gpu', 'Immortalis-G720',
+            'ram', '12GB / 16GB',
+            'storage', '256GB / 512GB / 1TB'
+        ),
+        'camera', JSON_OBJECT(
+            'main_camera', 'Quad: 50 MP, f/1.6, 23mm (wide); 50 MP, f/2.6, 73mm (telephoto), 3x optical zoom; 50 MP, f/2.0, 15mm, 120˚ (ultrawide); 10 MP, f/4.0, 135mm (periscope telephoto), 6x optical zoom',
+            'features', 'Hasselblad Color Calibration, LED flash, HDR, panorama',
+            'video', '4K@30/60fps, 1080p@30/60/240fps, HDR, Dolby Vision',
+            'selfie_camera', '32 MP, f/2.4, 21mm (wide)'
+        ),
+        'battery', JSON_OBJECT(
+            'battery_type', 'Li-Po 5800 mAh, non-removable',
+            'charging', '80W wired (100% in 30 min), 50W wireless, 10W reverse wireless'
+        ),
+        'connectivity', JSON_OBJECT(
+            'wlan', 'Wi-Fi 802.11 a/b/g/n/ac/6e/7, dual-band',
+            'bluetooth', '5.4, A2DP, LE',
+            'gps', 'Yes, with A-GPS, GLONASS, BDS, GALILEO, QZSS',
+            'nfc', 'Yes',
+            'port', 'USB Type-C 3.1'
+        )
+    )
+);

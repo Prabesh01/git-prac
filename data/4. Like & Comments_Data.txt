@@ -1,0 +1,73 @@
+-- Comments for Posts (post_id 2 to 8)
+INSERT INTO Comments (post_id, user_id, content, created_at, is_deleted) VALUES
+-- Comments for post_id 2 (iPhone 15 Pro)
+(2, 2, 'Wow, the titanium frame sounds amazing! Is the A17 Pro chip really that fast?', '2023-05-21 10:15:00', FALSE),
+(2, 3, 'The camera upgrades are tempting, but the price is steep. Worth it?', '2023-05-21 12:30:00', FALSE),
+(2, 4, 'I’m excited about the USB-C port finally! Great post!', '2023-05-22 09:00:00', FALSE),
+(2, 5, 'Where can I get the 1TB version in Kathmandu?', '2023-05-22 14:45:00', FALSE),
+-- Comments for post_id 3 (Galaxy S24 Ultra)
+(3, 3, 'That 200MP camera is insane! Can’t wait to try it out.', '2024-02-11 08:20:00', FALSE),
+(3, 4, 'Love the AI features Samsung added. Thanks for the detailed post!', '2024-02-11 11:50:00', FALSE),
+(3, 6, 'How’s the battery life compared to the S23 Ultra?', '2024-02-12 16:00:00', FALSE),
+(3, 7, 'The titanium frame looks sleek. Is it lighter than last year’s model?', '2024-02-12 18:30:00', FALSE),
+-- Comments for post_id 4 (Pixel 9 Pro)
+(4, 2, 'Pixel cameras never disappoint! Excited for the 5x zoom.', '2024-09-02 09:10:00', FALSE),
+(4, 5, 'The AI stuff sounds cool, but is the Tensor G4 faster than Snapdragon?', '2024-09-02 13:25:00', FALSE),
+(4, 6, 'Great post! Any idea when Daraz will have discounts?', '2024-09-03 10:40:00', FALSE),
+-- Comments for post_id 5 (OnePlus 13)
+(5, 3, '100W charging is a game-changer! How long does it really take?', '2025-01-16 07:55:00', FALSE),
+(5, 4, 'Hasselblad cameras on OnePlus? I’m sold!', '2025-01-16 12:00:00', FALSE),
+(5, 7, 'The display looks stunning. Thanks for sharing!', '2025-01-17 09:15:00', FALSE),
+(5, 2, 'Is the OxygenOS still as smooth as before?', '2025-01-17 14:20:00', FALSE),
+-- Comments for post_id 6 (Xiaomi 15 Pro)
+(6, 5, 'Leica cameras sound epic! How’s the low-light performance?', '2024-11-11 11:30:00', FALSE),
+(6, 6, '120W charging in 18 minutes? That’s crazy!', '2024-11-11 15:45:00', FALSE),
+(6, 2, 'Nice breakdown! Any deals at Mi Store?', '2024-11-12 08:50:00', FALSE),
+(6, 3, 'The price is tempting for these specs. Great post!', '2024-11-12 10:10:00', FALSE),
+-- Comments for post_id 7 (Sony Xperia 1 VI)
+(7, 4, '4K display is perfect for movies! Is it worth the price?', '2024-07-02 09:30:00', FALSE),
+(7, 7, 'Sony’s camera system looks pro-level. Thanks for the info!', '2024-07-02 12:15:00', FALSE),
+(7, 2, 'Love the 21:9 aspect ratio. Any stock at Sony Center?', '2024-07-03 10:00:00', FALSE),
+-- Comments for post_id 8 (Oppo Find X8 Pro)
+(8, 3, 'Hasselblad and 6x zoom? Oppo’s killing it!', '2024-12-06 08:40:00', FALSE),
+(8, 5, 'The design is gorgeous. Where can I buy it?', '2024-12-06 11:20:00', FALSE),
+(8, 6, 'Great post! How’s the battery life on this one?', '2024-12-07 09:50:00', FALSE),
+(8, 7, 'Dimensity 9400 sounds powerful. Excited to test it!', '2024-12-07 14:30:00', FALSE);
+
+-- Likes for Posts (post_id 2 to 8)
+INSERT INTO Likes (post_id, user_id, created_at, is_deleted) VALUES
+-- Likes for post_id 2 (iPhone 15 Pro)
+(2, 2, '2023-05-21 09:00:00', FALSE),
+(2, 3, '2023-05-21 11:00:00', FALSE),
+(2, 4, '2023-05-22 08:00:00', FALSE),
+(2, 5, '2023-05-22 13:00:00', FALSE),
+(2, 6, '2023-05-23 10:00:00', FALSE),
+-- Likes for post_id 3 (Galaxy S24 Ultra)
+(3, 3, '2024-02-11 07:00:00', FALSE),
+(3, 4, '2024-02-11 10:00:00', FALSE),
+(3, 6, '2024-02-12 12:00:00', FALSE),
+(3, 7, '2024-02-12 15:00:00', FALSE),
+-- Likes for post_id 4 (Pixel 9 Pro)
+(4, 2, '2024-09-02 08:00:00', FALSE),
+(4, 5, '2024-09-02 11:00:00', FALSE),
+(4, 6, '2024-09-03 09:00:00', FALSE),
+(4, 7, '2024-09-03 12:00:00', FALSE),
+-- Likes for post_id 5 (OnePlus 13)
+(5, 2, '2025-01-16 06:00:00', FALSE),
+(5, 3, '2025-01-16 09:00:00', FALSE),
+(5, 4, '2025-01-16 11:00:00', FALSE),
+(5, 7, '2025-01-17 08:00:00', FALSE),
+-- Likes for post_id 6 (Xiaomi 15 Pro)
+(6, 2, '2024-11-11 10:00:00', FALSE),
+(6, 3, '2024-11-11 12:00:00', FALSE),
+(6, 5, '2024-11-12 07:00:00', FALSE),
+(6, 6, '2024-11-12 09:00:00', FALSE),
+-- Likes for post_id 7 (Sony Xperia 1 VI)
+(7, 2, '2024-07-02 08:00:00', FALSE),
+(7, 4, '2024-07-02 10:00:00', FALSE),
+(7, 7, '2024-07-03 07:00:00', FALSE),
+-- Likes for post_id 8 (Oppo Find X8 Pro)
+(8, 3, '2024-12-06 07:00:00', FALSE),
+(8, 5, '2024-12-06 09:00:00', FALSE),
+(8, 6, '2024-12-07 08:00:00', FALSE),
+(8, 7, '2024-12-07 11:00:00', FALSE);

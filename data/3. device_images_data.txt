@@ -1,0 +1,36 @@
+INSERT INTO DeviceImages (device_id, image_url) VALUES
+-- Images for device_id 1 (iPhone 15 Pro)
+(1, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(1, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(1, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(1, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+-- Images for device_id 2 (Galaxy S24 Ultra)
+(2, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(2, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(2, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(2, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+-- Images for device_id 3 (Pixel 9 Pro)
+(3, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(3, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(3, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(3, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+-- Images for device_id 4 (OnePlus 13)
+(4, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(4, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(4, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(4, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+-- Images for device_id 5 (Xiaomi 15 Pro)
+(5, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(5, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(5, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(5, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+-- Images for device_id 6 (Sony Xperia 1 VI)
+(6, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(6, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(6, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(6, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+-- Images for device_id 7 (Oppo Find X8 Pro)
+(7, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(7, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(7, 'https://rev-art-v3.vercel.app/placeholder.svg'),
+(7, 'https://rev-art-v3.vercel.app/placeholder.svg');

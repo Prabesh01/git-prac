@@ -1,0 +1,292 @@
+.device-details {
+    padding: 3rem 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.back-button {
+    margin-bottom: 2rem;
+}
+
+.back-button .btn-link {
+    color: #1a73e8;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button .btn-link:hover {
+    color: #1557b0;
+    transform: translateX(-5px);
+}
+
+.device-content {
+    gap: 3rem;
+    border-radius: 16px;
+    padding: 2rem;
+}
+
+.device-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-image {
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4/2;
+    transition: transform 0.3s ease;
+    display: flex; /* Use flexbox to display two images side by side */
+    gap: 0.5rem; /* Small gap between images */
+}
+
+.main-image:hover {
+    transform: scale(1.02);
+}
+
+.main-image img {
+    width: 50%; /* Each image takes half the container width */
+    height: 100%;
+    object-fit: cover; /* Ensure images cover their area without distortion */
+    transition: opacity 0.3s ease;
+}
+
+.image-thumbnails {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: #1a73e8 #e4e9f0;
+}
+
+.image-thumbnails::-webkit-scrollbar {
+    height: 8px;
+}
+
+.image-thumbnails::-webkit-scrollbar-thumb {
+    background: #1a73e8;
+    border-radius: 4px;
+}
+
+.image-thumbnails::-webkit-scrollbar-track {
+    background: #e4e9f0;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.thumbnail.active {
+    border-color: #1a73e8;
+    transform: scale(1.05);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.device-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.device-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.device-meta {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.brand, .category {
+    background: #e8f0fe;
+    color: #1a73e8;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.brand:hover, .category:hover {
+    background: #d2e3fc;
+}
+
+.device-price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e91e63;
+    margin-top: 0.5rem;
+    animation: priceFade 1s ease;
+}
+
+@keyframes priceFade {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.device-specs {
+    margin-top: 2rem;
+}
+
+.device-specs h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.device-specs h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #1a73e8;
+    border-radius: 2px;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.spec-item {
+    background: #f8f9fa;
+    padding: 1.25rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e4e9f0;
+}
+
+.spec-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.spec-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.spec-label i {
+    color: #1a73e8;
+    font-size: 1.1rem;
+}
+
+.spec-value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+@media (max-width: 1024px) {
+    .device-content {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+
+    .device-name {
+        font-size: 2rem;
+    }
+
+    .device-price {
+        font-size: 1.75rem;
+    }
+
+    .device-gallery {
+        align-items: center;
+    }
+
+    .main-image {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .device-details {
+        padding: 2rem 0;
+    }
+
+    .device-name {
+        font-size: 1.75rem;
+    }
+
+    .device-price {
+        font-size: 1.5rem;
+    }
+
+    .device-specs h2 {
+        font-size: 1.5rem;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-image {
+        aspect-ratio: 16/9;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .device-name {
+        font-size: 1.5rem;
+    }
+
+    .device-price {
+        font-size: 1.25rem;
+    }
+
+    .device-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .brand, .category {
+        width: fit-content;
+    }
+}
